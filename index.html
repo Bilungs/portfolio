@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Mas Farhan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="style.css?v1.2">
+</head>
+
+<body class="bg-slate-900 text-slate-100 font-mono">
+
+    <section id="home" class="relative h-screen flex flex-col justify-center items-center text-center overflow-hidden">
+
+        <div class="absolute inset-0">
+            <img src="img/data-center.jpg" alt="Background Network" class="w-full h-full object-cover brightness-75">
+        </div>
+
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/60 to-slate-900"></div>
+
+        <div class="section-content"></div>
+            <div data-aos="zoom-in" class="w-36 aspect-square mx-auto mb-6">
+                <img
+                    src="img/sigam.jpg"
+                    alt="Foto Profil Farhan"
+                    class="w-full h-full object-cover rounded-full border-4 border-cyan-400 shadow-lg transition-transform hover:scale-105 duration-300"
+                />
+            </div>
+        <h1 data-aos="fade-up" data-aos-delay="200" class="text-4xl font-bold text-cyan-300 mb-2">Muhammad Farhan Dzulfikar</h1>
+    <p data-aos="fade-up" data-aos-delay="400" class="text-gray-400 text-lg mb-8">Network Engineer</p>
+
+    <h2 data-aos="fade-up" data-aos-delay="600" class="text-2xl font-semibold mb-2">Hai 👋</h2>
+    <p data-aos="fade-up" data-aos-delay="800" class="text-gray-300 mb-10">Welcome to my Portfolio</p>
+
+    <a href="#about" data-aos="fade-up" data-aos-delay="1000"
+        class="bg-cyan-500 text-slate-900 font-semibold px-8 py-3 rounded-lg hover:bg-cyan-400 transition-colors text-lg shadow-lg">
+        Let's Go!!
+    </a>
+
+    <div class="absolute bottom-10 animate-bounce text-cyan-400 text-2xl">
+    ↓
+    </div>
+    </section>
+
+    <section id="about" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+        <h2 data-aos="fade-up" class="text-3xl font-semibold mb-6 text-cyan-300">About Me</h2>
+
+        <div data-aos="fade-up" data-aos-delay="200" class="max-w-3xl text-gray-300 leading-relaxed">
+            <p class="mb-6">
+                Saya adalah seorang <span class="text-cyan-400 font-semibold">Network Engineer</span> dengan latar belakang
+                Teknik Komputer dan Jaringan. Berpengalaman dalam konfigurasi jaringan, manajemen server, serta
+                pengembangan aplikasi berbasis web.
+            </p>
+            <p class="mb-6">
+                Saya memiliki ketertarikan tinggi terhadap teknologi jaringan, DevOps, dan pemrograman frontend maupun backend.
+                Saat ini saya terus mengembangkan keahlian dalam otomatisasi jaringan, monitoring sistem, dan
+                integrasi software dengan perangkat jaringan seperti MikroTik (Network Automation Program).
+            </p>
+            <p>
+                Prinsip saya sederhana — <span class="text-cyan-400 italic">“Automate what you can, optimize what you
+                    can’t.”</span>
+            </p>
+        </div>
+        
+        <a href="#skills" data-aos="fade-up" data-aos-delay="400"
+            class="mt-10 bg-cyan-500 text-slate-900 font-semibold px-8 py-3 rounded-lg hover:bg-cyan-400 transition-colors text-lg shadow-lg">
+            Lanjut ke Skills ↓
+        </a>
+    </section>
+
+    <section id="skills" class="min-h-screen flex flex-col justify-center items-center text-center pt-32">
+    <h2 class="text-3xl font-semibold mb-4 text-cyan-300">Skills</h2>
+    <p data-aos="fade-up" data-aos-delay="200" class="text-gray-400 mb-10">Beberapa kemampuan teknis yang saya kuasai</p>
+
+    <div class="flex flex-wrap justify-center gap-12 max-w-4xl">
+        <div data-aos="fade-up" data-aos-delay="200" class="w-24 h-24 hover:scale-110 transition-transform duration-300">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300" class="w-24 h-24 hover:scale-110 transition-transform duration-300">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/winbox/winbox-original.svg" alt="Python">
+        </div>
+    </section>
+
+    <section id="projects" class="min-h-screen flex flex-col justify-center items-center text-center pt-32 pb-16">
+        <h2 data-aos="fade-up" class="text-3xl font-semibold mb-4 text-cyan-300">Projects</h2>
+        <p data-aos="fade-up" data-aos-delay="200" class="text-gray-400 mb-10">Beberapa proyek yang pernah saya kerjakan</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl px-4">
+
+        <div data-aos="fade-up" data-aos-delay="200"
+            class="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+            <img src="/img/bandwidth_calculator.png" alt="Project 1" class="w-full h-40 object-cover">
+            <div class="p-5 text-left">
+                <h3 class="text-xl font-semibold text-cyan-300 mb-2">Bandwidth Calculator</h3>
+                <p class="text-gray-400 text-sm mb-4">Aplikasi berbasis website yang berfungsi untuk membantu tim Network Engineer dalam menghitung
+                    dan membagi Bandwidth secara cepat dan efisien.</p>
+                <a href="#" class="text-cyan-400 hover:underline text-sm">Lihat Detail →</a>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+    <footer class="text-center py-6 text-gray-500 text-sm">
+        © 2025 Mas Farhan — All rights reserved
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-in-out'
+        });
+    </script>
+</body>
+</html>
