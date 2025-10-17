@@ -45,3 +45,22 @@ body {
     position: relative;
     z-index: 10;
 }
+
+.perspective-1000 {
+    perspective: 1000px;
+}
+
+  /* Efek hover 3D rotate */
+.group:hover img {
+    transform: rotateY(12deg) scale(1.1);
+}
+
+  /* Efek glowing biru halus */
+.group:hover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0 25px 10px rgba(59, 130, 246, 0.2);
+    z-index: 0;
+}

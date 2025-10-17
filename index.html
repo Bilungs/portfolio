@@ -7,6 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="style.css?v1.2">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script src="script.js" defer></script>
 </head>
 
 <body class="bg-slate-900 text-slate-100 font-mono">
@@ -27,6 +30,7 @@
                     class="w-full h-full object-cover rounded-full border-4 border-cyan-400 shadow-lg transition-transform hover:scale-105 duration-300"
                 />
             </div>
+
         <h1 data-aos="fade-up" data-aos-delay="200" class="text-4xl font-bold text-cyan-300 mb-2">Muhammad Farhan Dzulfikar</h1>
     <p data-aos="fade-up" data-aos-delay="400" class="text-gray-400 text-lg mb-8">Network Engineer</p>
 
@@ -49,8 +53,8 @@
         <div data-aos="fade-up" data-aos-delay="200" class="max-w-3xl text-gray-300 leading-relaxed">
             <p class="mb-6">
                 Saya adalah seorang <span class="text-cyan-400 font-semibold">Network Engineer</span> dengan latar belakang
-                Teknik Komputer dan Jaringan. Berpengalaman dalam konfigurasi jaringan, manajemen server, serta
-                pengembangan aplikasi berbasis web.
+                Teknik Komputer dan Jaringan. Berpengalaman dalam konfigurasi jaringan, manajemen server, 
+                pengembangan aplikasi berbasis web, serta LLM/ML.
             </p>
             <p class="mb-6">
                 Saya memiliki ketertarikan tinggi terhadap teknologi jaringan, DevOps, dan pemrograman frontend maupun backend.
@@ -63,23 +67,116 @@
             </p>
         </div>
         
-        <a href="#skills" data-aos="fade-up" data-aos-delay="400"
+        <a href="#academy" data-aos="fade-up" data-aos-delay="400"
             class="mt-10 bg-cyan-500 text-slate-900 font-semibold px-8 py-3 rounded-lg hover:bg-cyan-400 transition-colors text-lg shadow-lg">
-            Lanjut ke Skills ↓
+            Next ↓
         </a>
     </section>
 
-    <section id="skills" class="min-h-screen flex flex-col justify-center items-center text-center pt-32">
-    <h2 class="text-3xl font-semibold mb-4 text-cyan-300">Skills</h2>
-    <p data-aos="fade-up" data-aos-delay="200" class="text-gray-400 mb-10">Beberapa kemampuan teknis yang saya kuasai</p>
+    <section id="academy" class="relative py-24 px-6 bg-gradient-to-b from-transparent to-blue-50 overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="h-[3px] w-full bg-blue-400/60 blur-sm"></div>
+            <div class="h-full w-[3px] bg-blue-400/30 absolute left-1/3"></div>
+            <div class="h-full w-[2px] bg-blue-200/30 absolute right-1/4"></div>
+        </div>
 
-    <div class="flex flex-wrap justify-center gap-12 max-w-4xl">
-        <div data-aos="fade-up" data-aos-delay="200" class="w-24 h-24 hover:scale-110 transition-transform duration-300">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <h2 class="text-5xl font-extrabold text-center mb-16 text-blue-700 tracking-wide relative z-10">
+            🎓 Academy
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-12 relative z-10 max-w-6xl mx-auto">
+
+            <div class="group flex items-center gap-8 p-8 bg-white/90 border border-blue-200 rounded-3xl shadow-lg
+                    hover:shadow-2xl hover:shadow-blue-300/40 backdrop-blur-xl transform hover:-translate-y-2
+                    transition-all duration-500 ease-out">
+                <div class="relative w-32 h-32 flex items-center justify-center">
+                    <div
+                        class="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-300 to-blue-700 blur-md opacity-70 group-hover:opacity-100 transition">
+                    </div>
+                    <img src="img/neskar.png" alt="SMK Negeri 1 Karawang"
+                        class="relative z-10 w-28 h-28 object-contain transform transition-transform duration-500 group-hover:rotate-[10deg] group-hover:scale-110">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-blue-800">SMK Negeri 1 Karawang</h3>
+                    <p class="text-blue-600 text-sm">Teknik Komputer dan Jaringan</p>
+                    <p class="text-gray-500 text-xs mb-2">2024 - Sekarang</p>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        Mempelajari Basic Networking, administrasi jaringan, dan konfigurasi server untuk mendukung
+                        infrastruktur digital sekolah.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="group flex items-center gap-8 p-8 bg-white/90 border border-blue-200 rounded-3xl shadow-lg
+                    hover:shadow-2xl hover:shadow-blue-300/40 backdrop-blur-xl transform hover:-translate-y-2
+                    transition-all duration-500 ease-out">
+                <div class="relative w-32 h-32 flex items-center justify-center">
+                    <div
+                        class="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-200 to-blue-600 blur-md opacity-70 group-hover:opacity-100 transition">
+                    </div>
+                    <img src="img/bnet_academy.png" alt="Bnet Academy"
+                        class="relative z-10 w-28 h-28 object-contain transform transition-transform duration-500 group-hover:rotate-[10deg] group-hover:scale-110">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-blue-800">Bnet Academy</h3>
+                    <p class="text-blue-600 text-sm">Network Engineer</p>
+                    <p class="text-gray-500 text-xs mb-2">2025</p>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        Mendalami Networking, Linux Environment, dan DevOps pipeline dengan studi kasus berbasis proyek
+                        nyata industri.
+                    </p>
+                </div>
+            </div>
+    
         </div>
-        <div data-aos="fade-up" data-aos-delay="300" class="w-24 h-24 hover:scale-110 transition-transform duration-300">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/winbox/winbox-original.svg" alt="Python">
+
+        <div class="text-center mt-16 relative z-10">
+            <a href="#skills" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg
+                    hover:bg-blue-500 hover:scale-105 transition-all duration-300">
+                Next ↓
+            </a>
         </div>
+    
+        <div
+            class="absolute -bottom-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-300/20 blur-[150px] rounded-full">
+        </div>
+    </section>
+
+    <section id="skills"
+        class="min-h-screen flex flex-col justify-center items-center bg-[#0a0f1c] text-center relative overflow-hidden">
+
+        <div class="absolute inset-0">
+            <div class="absolute left-1/3 w-px h-full bg-cyan-500/20"></div>
+            <div class="absolute right-1/3 w-px h-full bg-cyan-500/20"></div>
+        </div>
+    
+        <h2 class="text-4xl font-bold text-cyan-300 mb-2 flex items-center gap-2">
+            <i class="fa-solid fa-lightbulb text-yellow-300"></i> Skills
+        </h2>
+        <p class="text-gray-400 mb-10">Klik kategori di bawah ini untuk melihat keahlian saya berdasarkan bidang</p>
+    
+        <div class="flex flex-wrap justify-center gap-4 mb-10 z-10">
+            <button
+                class="category-btn bg-cyan-700/40 text-cyan-200 px-6 py-2 rounded-full hover:bg-cyan-500/60 transition active"
+                data-category="programming">Programming</button>
+            <button class="category-btn bg-cyan-700/40 text-cyan-200 px-6 py-2 rounded-full hover:bg-cyan-500/60 transition"
+                data-category="networking">Networking</button>
+            <button class="category-btn bg-cyan-700/40 text-cyan-200 px-6 py-2 rounded-full hover:bg-cyan-500/60 transition"
+                data-category="linux">Linux Env</button>
+        </div>
+    
+        <div id="skill-content"
+            class="grid sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-5xl mx-auto px-6 z-10 transition-all duration-500">
+        </div>
+    
+        <div class="absolute bottom-0 w-full h-32 bg-gradient-to-t from-cyan-500/10 to-transparent"></div>
+
+            <div class="mt-14 z-10">
+                <button onclick="scrollToSection('projects')"
+                    class="group flex items-center gap-2 px-6 py-3 bg-cyan-600/60 hover:bg-cyan-500 text-white rounded-full border border-cyan-400/40 hover:border-cyan-300 transition-all backdrop-blur-md shadow-md shadow-cyan-500/20">
+                    Next ↓
+                </button>
+            </div>
     </section>
 
     <section id="projects" class="min-h-screen flex flex-col justify-center items-center text-center pt-32 pb-16">
@@ -90,7 +187,7 @@
 
         <div data-aos="fade-up" data-aos-delay="200"
             class="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
-            <img src="/img/bandwidth_calculator.png" alt="Project 1" class="w-full h-40 object-cover">
+            <img src="img/apk.jpg" alt="Project 1" class="w-full h-40 object-cover">
             <div class="p-5 text-left">
                 <h3 class="text-xl font-semibold text-cyan-300 mb-2">Bandwidth Calculator</h3>
                 <p class="text-gray-400 text-sm mb-4">Aplikasi berbasis website yang berfungsi untuk membantu tim Network Engineer dalam menghitung
@@ -106,13 +203,5 @@
         © 2025 Mas Farhan — All rights reserved
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true,
-            easing: 'ease-in-out'
-        });
-    </script>
 </body>
 </html>
