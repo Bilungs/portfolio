@@ -125,3 +125,65 @@ document.addEventListener("DOMContentLoaded", () => {
     // Expose fungsi jika mau dipanggil dari tombol di HTML
     window.scrollToSection = scrollToSection;
 });
+
+const projects = [
+        {
+            id: 1,
+            title: "Bandwidth Calculator",
+            img: "img/apk.jpg",
+            desc: "Aplikasi berbasis web yang membantu Network Engineer menghitung dan membagi bandwidth dengan cepat dan efisien. Dibangun menggunakan Django, RouterOS API, dan Bootstrap CSS.",
+            stakeholders: [
+                { name: "Juliandi Pratama", role: "Project Manager" },
+                { name: "Muhammad Farhan Dzulfikar", role: "Developer Frontend & Network Engineer" },
+                { name: "Muhammad Rasyid Ruhiyat", role: "Developer Backend & Network Engineer" },
+                { name: "Tim Network Engineer", role: "Tester dan Validator Bandwidth" }
+            ],
+            links: [
+                { text: "🔗 GitHub", url: "https://github.com/Bilungs/Kalkulator_Bandwidth" },
+                { text: "🌐 Live Demo", url: "#" }
+            ]
+        },
+    ];
+
+    // Elemen modal
+    const modal = document.getElementById("project-modal");
+    const modalImg = document.getElementById("modal-img");
+    const modalTitle = document.getElementById("modal-title");
+    const modalDesc = document.getElementById("modal-desc");
+    const modalStakeholders = document.querySelector("#modal-stakeholders ul");
+    const modalLinks = document.getElementById("modal-links");
+    const closeBtn = document.getElementById("close-modal");
+
+    // Tombol detail
+    document.querySelectorAll(".project-detail-btn").forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+            const project = projects[index];
+            modalImg.src = project.img;
+            modalTitle.textContent = project.title;
+            modalDesc.textContent = project.desc;
+
+            // Stakeholders list
+            modalStakeholders.innerHTML = project.stakeholders.map(
+                person => `
+                <li class="flex items-center gap-2 bg-slate-700/50 px-3 py-1.5 rounded-lg hover:bg-slate-600/50 transition">
+                    <span class="text-cyan-400">👤</span>
+                    <span class="font-medium">${person.name}</span>
+                    <span class="text-gray-400 text-xs">(${person.role})</span>
+                </li>`
+            ).join("");
+
+            // Links
+            modalLinks.innerHTML = project.links.map(
+                link => `<a href="${link.url}" target="_blank" class="text-cyan-400 hover:underline">${link.text}</a>`
+            ).join(" ");
+
+            modal.classList.remove("hidden");
+            modal.classList.add("flex");
+        });
+    });
+
+    // Tutup modal
+    closeBtn.addEventListener("click", () => modal.classList.add("hidden"));
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) modal.classList.add("hidden");
+    });

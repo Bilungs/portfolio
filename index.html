@@ -191,11 +191,35 @@
                         Aplikasi berbasis website yang membantu tim Network Engineer menghitung dan membagi Bandwidth
                         dengan cepat dan efisien.
                     </p>
-                    <a href="#" class="text-cyan-400 hover:underline text-sm">Lihat Detail →</a>
+                    <a href="javascript:void(0)" class="text-cyan-400 hover:underline text-sm project-detail-btn">Lihat Detail →</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <div id="project-modal"
+        class="fixed inset-0 bg-black/70 backdrop-blur-sm flex justify-center items-center z-50 hidden transition-opacity">
+        <div class="bg-slate-800 rounded-2xl shadow-xl max-w-2xl w-[90%] p-6 text-left relative">
+            <button id="close-modal"
+                class="absolute top-3 right-3 text-gray-400 hover:text-cyan-400 transition-colors text-xl font-bold">
+                ✕
+            </button>
+    
+            <img id="modal-img" src="" alt="Project Preview"
+                class="w-full h-60 object-cover rounded-lg mb-5 border border-cyan-500/30">
+            <h3 id="modal-title" class="text-2xl font-semibold text-cyan-300 mb-2"></h3>
+            <p id="modal-desc" class="text-gray-300 mb-4"></p>
+            
+            <div id="modal-stakeholders" class="mb-5">
+                <h4 class="text-cyan-400 font-semibold mb-2">Stakeholders</h4>
+                <ul class="flex flex-wrap gap-3 text-gray-300 text-sm"></ul>
+            </div>
+
+    
+            <div id="modal-links" class="flex flex-wrap gap-3 mt-4">
+            </div>
+        </div>
+    </div>
 
     <footer class="text-center py-6 text-gray-500 text-sm">
         © 2025 Mas Farhan — All rights reserved
